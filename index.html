@@ -11,17 +11,23 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <style>
+        * {
+            margin: 0 auto;
+            align-items: center;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
         body {
             background-color: black;
             color: white;
         }
 
         header {
-            background-color: rgba(0, 255, 255, 0.452);
+            background-color: rgba(228, 23, 23, 0.452);
         }
 
         header div {
-            border: 2px blue solid;
+            border: 2px rgba(255, 0, 0, 0) solid;
         }
 
         main {
@@ -29,15 +35,53 @@
         }
 
         main div {
-            border: 2px red solid;
+            border: 2px rgba(255, 0, 0, 0) solid;
         }
 
         footer {
-            background-color: rgba(11, 134, 0, 0.466);
+            background-color: rgba(228, 23, 23, 0.452);
         }
 
         footer div {
-            border: 2px green solid;
+            border: 2px rgba(255, 0, 0, 0) solid;
+        }
+
+        .card {
+            margin: 0 auto;
+        }
+
+        #carouselExampleSlidesOnly {
+            margin: 0 auto;
+        }
+
+        .container {
+            background-color: rgb(58, 0, 0);
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        div#carouselExampleSlidesOnly>div.carousel-inner>div>img {
+            width: 700px;
+        }
+
+        @media (max-width: 767px) {
+            div#carouselExampleSlidesOnly>div.carousel-inner>div>img {
+                width: 500px;
+            }
+        }
+
+        @media (max-width: 535px) {
+            div#carouselExampleSlidesOnly>div.carousel-inner>div>img {
+                width: 400px;
+            }
+        }
+
+        @media (max-width: 450px) {
+            div#carouselExampleSlidesOnly>div.carousel-inner>div>img {
+                width: 370px;
+            }
         }
     </style>
 
@@ -48,10 +92,10 @@
     <header>
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    LOGO
+                <div class="col-4">
+                    <img width="100%" src="imagens/logo.png" alt="">
                 </div>
-                <div class="col-9">
+                <div class="col-8">
                     LINK | LINK | LINK
                 </div>
             </div>
@@ -60,27 +104,106 @@
                 <div class="col-lg-4 col-12">
                     <nav class="navbar navbar-light">
                         <form class="form-inline">
-                          <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
-                          <button class="btn btn-outline-success my-2 my-sm-0 bg-dark " type="submit">Pesquisar</button>
+                            <input class="form-control mr-sm-2 bg-warning" type="search" placeholder="Pesquisar"
+                                aria-label="Pesquisar">
+                            <button class="btn btn-outline-warning my-2 my-sm-0 bg-danger "
+                                type="submit">Pesquisar</button>
                         </form>
-                      </nav>
+                    </nav>
                 </div>
-                <div class="col-lg-4 col-6">icons ()()()</div>
-                <div class="col-lg-4 col-6">LOGIN//////////////////</div>
+                <div class="col-lg-4 col-6"><img src="imagens/youtube.webp" width="30px"> <img src="imagens/twitter.png"
+                        width="30px"> <img src="imagens/instagram.webp" width="30px"> <img
+                        src="imagens/logo-koo-700x700.png" width="30px"></div>
+                <div class="col-lg-4 col-6">
+                    <form>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control mr-sm-2 bg-warning" id="inputEmail3"
+                                    placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control mr-sm-2 bg-warning" id="inputPassword3"
+                                    placeholder="Senha">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-outline-warning bg-danger">Entrar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-        
     </header>
 
     <main>
-        <div>
-            MEIO
+        <div class="container">
+            <div class="row">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="imagens/sexta-temporada-boku-no-hero-e1658880362365.jpg" alt="Primeiro Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/Boku_no_hero_academia_wallpaper_hd_anime_by_corphish2-d9fl0dr.png"
+                                alt="Segundo Slide">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="imagens/1629798226_254136_1629798326_noticia_normal.jpg" alt="Terceiro Slide">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-12">
+                    <div class="row">
+                        <div class="col-md-6 col-12">
+                            <div class="card alert alert-danger" style="width: 18rem;">
+                                <img class="card-img-top" src="imagens/PacoteAllMight.png" alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pacote All Might - Fortnite</h5>
+                                    <p class="card-text">Skin All Might com Emote Embutido, Mochila do diretor Nezu</p>
+                                    <a href="https://xbox.com/pt-br/play" target="_blank"
+                                        class="btn btn-dark">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-12">
+                            <div class="card alert alert-danger" style="width: 18rem;">
+                                <img class="card-img-top" src="imagens/PacoteClasse1-A.png"
+                                    alt="Imagem de capa do card">
+                                <div class="card-body">
+                                    <h5 class="card-title">Pacote Classe 1-A - Fortnite</h5>
+                                    <p class="card-text">Skins Izuku Midoriya, Ochacho Uraraka e Katsuki Bakugo</p>
+                                    <a href="https://xbox.com/pt-br/play" target="_blank"
+                                        class="btn btn-dark">Visitar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12"><img width="100%" src="imagens/imagempropaganda.jfif" alt=""></div>
+            </div>
         </div>
     </main>
 
     <footer>
-        <div>
-            RODAPÉ
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-6">
+                    <p>Fortnite™</p>
+                    <p>Boku No Hero</p>
+                    <p>Fãs de BNHA</p>
+                    <p>Amamos este Anime</p>
+                </div>
+                <div class="col-lg-4 col-6"><img src="imagens/youtube.webp" width="30px"> <img src="imagens/twitter.png"
+                        width="30px"> <img src="imagens/instagram.webp" width="30px"> <img
+                        src="imagens/logo-koo-700x700.png" width="30px"> <br><br> Link | Link | Link</div>
+                <div class="col-lg-4 col-12"><img width="100%" src="imagens/logo.png" alt=""></div>
+            </div>
         </div>
     </footer>
 
